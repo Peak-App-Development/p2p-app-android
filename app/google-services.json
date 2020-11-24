@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "856836650198",
+    "firebase_url": "https://peak-to-peak-app.firebaseio.com",
+    "project_id": "peak-to-peak-app",
+    "storage_bucket": "peak-to-peak-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856836650198:android:58fa7ba6e5ed2646810577",
+        "android_client_info": {
+          "package_name": "com.p2p.pumapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856836650198-aencpjc23h70v0fl63ni7qfih1cfn5vk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.p2p.pumapp",
+            "certificate_hash": "6f880d9c1dc790acd00a6068c9d1e9d61fda1b02"
+          }
+        },
+        {
+          "client_id": "856836650198-7h9opa1dv067d4cft8bsttd25s2v0qqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNHTY3p7WwWklXND2WbgGwcBJ6vFomBRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856836650198-7h9opa1dv067d4cft8bsttd25s2v0qqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
