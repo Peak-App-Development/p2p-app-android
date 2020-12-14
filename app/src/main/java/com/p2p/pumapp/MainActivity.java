@@ -5,8 +5,10 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -56,18 +58,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AppointmentsFragment()).commit();
                 break;
-            case R.id.settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SettingsFragment()).commit();
-                break;
             case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new HomeFragment()).commit();
                 break;
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void buttonClick(View v) {
+        switch(v.getId()) {
+            case R.id.settings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SettingsFragment()).commit();
+                break;
+        }
+        drawer.closeDrawer(GravityCompat.START);
     }
 
     @Override

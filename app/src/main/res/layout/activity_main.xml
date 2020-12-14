@@ -44,6 +44,30 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu"
         android:layout_gravity="start"
-        android:background="@color/colorBackground"/>
+        android:background="@color/colorBackground"
+        android:layout_marginTop="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:gravity="center"
+                android:text="Settings"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/settings"
+                android:onClick="buttonClick"
+                android:background="@color/colorBackground"/>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

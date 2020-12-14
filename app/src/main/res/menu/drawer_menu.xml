@@ -23,10 +23,5 @@
             android:id="@+id/appointments"
             android:title="Appointments"
             android:icon="@drawable/appointments"/>
-
-        <item
-            android:id="@+id/settings"
-            android:title="Settings"
-            android:icon="@drawable/settings"/>
     </group>
 </menu>
