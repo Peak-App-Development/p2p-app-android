@@ -1,38 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="250dp" android:layout_margin="15dp" android:padding="15dp" android:id="@+id/parent_layout" android:background="@drawable/homeitems_border">
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:background="@drawable/homeitems_border">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/category_title"
-        android:text="Notifications"
-        android:gravity="center_horizontal"
-        android:textColor="#000"
-        android:textSize="25sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/category_item"
-        android:text="Newest notifications"
-        android:textColor="#000"
-        android:textSize="17sp"
-        android:layout_marginTop="50dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/category_item2"
-        android:text="Second Newest notifications"
-        android:textColor="#000"
-        android:textSize="17sp"
-        android:layout_marginTop="90dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/category_item3"
-        android:text="Newest notifications"
-        android:textColor="#000"
-        android:textSize="17sp"
-        android:layout_marginTop="130dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/categoryTitle"
+            android:text="Notifications"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
 
-</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:id="@+id/parent_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher"
+                android:text="Teacher"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_marginTop="50dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:text="Text"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:paddingTop="20dp"
+                android:layout_below="@id/teacher"/>
+<!--                android:layout_marginTop="90dp"-->
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="Date"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:paddingTop="20dp"
+                android:layout_below="@id/text"/>
+<!--                android:layout_marginTop="130dp"-->
+                />
+        />
+
+    </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

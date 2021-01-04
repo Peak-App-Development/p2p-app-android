@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -14,14 +15,25 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+    public static LinkedList<Notifications> notificationsList = new LinkedList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Notifications Fragment data
+        Log.d("MainActivity", "Before initialization");
+        initData();
+        Log.d("MainActivity", "After initialization");
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -43,12 +55,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    private void initData(){
+        //replace with actual data later!!!
+        notificationsList.add(new Notifications("Category 1", "Teacher 1", "Bring your book to class today!", "January 4, 2021"));
+        notificationsList.add(new Notifications("Category 2", "Teacher 2", "Bring your book to class today!", "January 4, 2021"));
+        notificationsList.add(new Notifications("Category 3", "Teacher 3", "Bring your book to class today!", "January 4, 2021"));
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.notifications:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new NotificationsFragment()).commit();
+                //add real information later
                 break;
             case R.id.calendar:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
