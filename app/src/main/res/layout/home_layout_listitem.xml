@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/category_item"
-        android:text="Newest notifications"
+        android:text="Newest viewItem"
         android:textColor="#000"
         android:textSize="17sp"
         android:layout_marginTop="50dp"/>
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/category_item2"
-        android:text="Second Newest notifications"
+        android:text="Second Newest viewItem"
         android:textColor="#000"
         android:textSize="17sp"
         android:layout_marginTop="90dp"/>
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/category_item3"
-        android:text="Newest notifications"
+        android:text="Newest viewItem"
         android:textColor="#000"
         android:textSize="17sp"
         android:layout_marginTop="130dp"/>

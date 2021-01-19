@@ -11,11 +11,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
-
 public class NotificationsFragment extends Fragment {
 
     private RecyclerView recyclerView;
@@ -30,7 +25,7 @@ public class NotificationsFragment extends Fragment {
 
     private void setRecyclerView() {
         Log.d("NotificationsFragment", "SetRecyclerView called");
-        ExpandableRecyclerViewAdapter expandableRecyclerViewAdapter = new ExpandableRecyclerViewAdapter(MainActivity.notificationsList, getContext());
+        ExpandableRecyclerViewAdapter expandableRecyclerViewAdapter = new ExpandableRecyclerViewAdapter(MainActivity.viewItemList, getContext());
         recyclerView.setAdapter(expandableRecyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
