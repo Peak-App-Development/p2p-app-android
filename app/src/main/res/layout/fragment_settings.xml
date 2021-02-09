@@ -1,8 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
 
-</LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/settings_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/homeitems_border"
+                android:padding="15dp"
+                android:text="Notifications"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/notification_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/settings_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_1"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/items_border"
+                android:padding="15dp"
+                android:text="Teacher Notifications"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/notification_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_general"
+                android:layout_marginTop="30dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/settings_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_2"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/items_border"
+                android:padding="15dp"
+                android:text="School Notifications"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/notification_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_teacher"
+                android:layout_marginTop="30dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/settings_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_3"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/items_border"
+                android:padding="15dp"
+                android:text="Calendar Notifications"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/notification_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_school"
+                android:layout_marginTop="30dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/settings_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_4"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/items_border"
+                android:padding="15dp"
+                android:text="Appointment Notifications"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/notification_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_calendar"
+                android:layout_marginTop="30dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/settings_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_5"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/homeitems_border"
+                android:padding="15dp"
+                android:text="Dark Mode"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/dark_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_appointment"
+                android:layout_marginTop="80dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/settings_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_6"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/homeitems_border"
+                android:padding="15dp"
+                android:text="Quick Links"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/quick_links1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_7"
+                android:layout_marginStart="40dp" />
+
+            <Spinner
+                android:id="@+id/quick_links2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quick_links1"
+                android:layout_marginStart="40dp" />
+
+            <Spinner
+                android:id="@+id/quick_links3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quick_links2"
+                android:layout_marginStart="40dp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
